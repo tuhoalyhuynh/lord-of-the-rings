@@ -1,5 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import Movie from './Movie'
+
+const movies = [
+  {
+    title: 'The Fellowship of the Ring',
+    hours: '2',
+    minutes: '58',
+  },
+  {
+    title: 'The Two Towers',
+    hours: '2',
+    minutes: '59',
+  },
+  {
+    title: 'The Return of the King',
+    hours: '3',
+    minutes: '21',
+  }
+]
 
 function App() {
   return (
@@ -17,6 +36,9 @@ function App() {
         >
           Learn React
         </a>
+      <Movie movies={movies[0]} />
+      <Movie movies={movies[1]} />
+      <Movie movies={movies[2]} />
       </header>
     </div>
   );
